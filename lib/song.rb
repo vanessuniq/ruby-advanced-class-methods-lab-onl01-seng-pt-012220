@@ -35,13 +35,6 @@ class Song
   end
   
   def self.find_or_create_by_name(name)
-    song_name = []
-    self.all.each {|song| song_name << song.name}
-    if song_name.include?(name)
-      find_by_name(name)
-    else 
-      create_by_name(name)
-    end
     
   end
   
