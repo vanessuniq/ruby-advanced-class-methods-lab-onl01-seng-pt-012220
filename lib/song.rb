@@ -38,7 +38,7 @@ class Song
     song_name = []
     self.all.each {|song| song_name << song.name}
     if song_name.include?(name)
-        self.find_by_name(name)
+        find_by_name(name)
     else 
         self.create_by_name(name)
     end
